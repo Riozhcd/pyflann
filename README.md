@@ -19,6 +19,7 @@ and I set the Matlab bind from **ON** to **OFF**.
    sudo make install
 5. 检查是否有相应的python接口，如果有的话就太棒了。所幸的是flann已经有实现python的接口，不过我们可以学习一下python如何调用c,c++的动态连接库的。
     * 包括数据类型的对应关系的设定,和动态库的加载
+    
    ```python
     from ctypes import (Structure, c_char_p, c_int, c_float, c_uint, c_long,
                     c_void_p, cdll, POINTER)
@@ -59,6 +60,7 @@ and I set the Matlab bind from **ON** to **OFF**.
 		    pass
 	    return None
     ```
+    
     * 定义接口的返回类型和参数的对应关系
 ## FLANN库
 [Flann 参考手册](http://www.cs.ubc.ca/research/flann/uploads/FLANN/flann_manual-1.8.4.pdf)
